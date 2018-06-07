@@ -230,13 +230,32 @@ html[lang=zh-cmn-Hans-CN] .introduction {
     font-size: 12px;
 }
 
-.t-shirt {
-    background: #2a2a2a;
-    border-radius: 7px;
-    max-width: 680px;
-    margin: auto;
-    margin-top: 50px;
-    padding: 16px 8px;
+/* 若浏览器支持 backdrop-filter，则透明度为 50%，并启用毛玻璃 */
+@supports (-webkit-backdrop-filter: blur(10px)) or (backdrop-filter: blur(10px)) {
+    .t-shirt {
+/*        background: #2a2a2a;*/
+        border-radius: 7px;
+        max-width: 680px;
+        margin: auto;
+        margin-top: 50px;
+        padding: 16px 8px;
+        background: rgba(0, 0, 0, 0.4);
+        color: #eee;
+        -webkit-backdrop-filter: blur(10px);
+        backdrop-filter: blur(10px);
+    }
+}
+
+/* 若浏览器器不支持，则不透明化 */
+@supports not ((-webkit-backdrop-filter: blur(10px)) or (backdrop-filter: blur(10px))) {
+    .textbox {
+        background: rgba(0, 0, 0, 0.6);
+        border-radius: 15px;
+        max-width: 680px;
+        margin: auto;
+        margin-top: 50px;
+        padding: 16px 8px;
+    }
 }
 
 .pre-order {
