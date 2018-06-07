@@ -10,7 +10,7 @@
         * { margin: 0; padding: 0;}
 
 .menu .header { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, "Microsoft YaHei UI", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";position: fixed; left: 0; top: 0; width: 100%; 
-/*    background-color: #323436;*/
+/*    background-color: #323436;*/z-index:9999;
     }   
 .menu .inner { width: 1000px; margin: 0 auto; overflow: hidden; zoom: 1;z-index:9999;}
 .menu h0 { float: left;}
@@ -21,13 +21,13 @@
 .menu .nav a:hover { background-color: rgba(255,255,255,0.3);}
 
 /*.menu .large .header { position: fixed; left: 0; top: 0; width: 100%; }*/
-.menu .large .inner {margin-left: -150px;padding: 25px 300px 25px;}
+.menu .large .inner {margin-left: -150px;padding: 25px 300px 25px;z-index:9999;}
 .menu .large h0 img { height: 64px;}
 .menu .large .nav { padding-top: 10px;}
 .menu .large .nav a { height: 44px; padding: 0 20px; line-height: 44px; font-size: 18px;}
 
 /*.menu .small .header { position: fixed; left: 0; top: 0; width: 100%; background-color: #323436;}   */
-.menu .small .inner { padding: 12px 300px 12px;margin-left: -150px; background-color: rgba(0, 0, 0, 0.6);}
+.menu .small .inner { padding: 12px 300px 12px;margin-left: -150px; background-color: rgba(0, 0, 0, 0.6);z-index:9999;}
 .menu .small h0 img { height: 34px;}
 .menu .small .nav { padding-top: 3px;}
 .menu .small .nav a { height: 28px; padding: 0 10px; line-height: 28px; font-size: 14px;}
