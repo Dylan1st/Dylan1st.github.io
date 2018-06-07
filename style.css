@@ -201,7 +201,7 @@ html[lang=zh-cmn-Hans-CN] .introduction {
     margin: 32px auto;
 }
 
-.join-button {
+.button {
     display: block;
     margin: 16px auto;
     padding: 10px;
@@ -216,11 +216,11 @@ html[lang=zh-cmn-Hans-CN] .introduction {
     transition: background-color 160ms ease 20ms;
 }
 
-.join-button:hover {
+.button:hover {
     background-color: #e7132d;
 }
 
-.join-button.disabled {
+.button.disabled {
     background-color: gray;
     opacity: 0.5;
 }
