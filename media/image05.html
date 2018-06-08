@@ -3,33 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-    <title>SUPER-VILLAIN-BOWL! - Dylan X</title>
+    <title>DYLAN X | SUPER-VILLAIN-BOWL!</title>
     <meta name="description" content="This is Dylan X'S personal website.">
     <meta name="keywords" content="DYLAN, DYLAN X">
-    <meta name="apple-mobile-web-app-title" content="ABC">
+    <meta name="apple-mobile-web-app-title" content="Dylan X">
     <meta property="og:title" content="DYLAN">
     <meta property="og:description" content="This is Dylan X's personal website.">
-    <meta property="og:url" content="https://www.dylanx.top">
+    <meta property="og:url" content="http://dylanx.top">
     <meta property="og:type" content="website">
     <meta property="og:image" content="../images/open_graph_logo.png">
-    <link rel="apple-touch-icon" href="../images/apple-touch-icon.png">
-    <link rel="mask-icon" href="../images/mask-icon.svg" color="#333333">
-    <link rel="icon" href="../images/favicon.ico">
+    <link rel="apple-touch-icon" href="../images/DylanX%20Logo.jpg">
+    <link rel="mask-icon" href="../images/banner_logo.jpg" color="#fff">
+    <link rel="icon" href="../images/DylanXLogo.jpg">
     <link rel="stylesheet" type="text/css" href="../style.css">
+    <link rel="stylesheet" type="text/css" href="../style2.css">
+    <script type="text/javascript" src="../js/jquery-1.4.2.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            
+	   $('.galleryImage').hover(function(){
+           $(this).find('img').animate({width:100, marginTop:10, marginLeft:10},500);
+	   },function(){
+           $(this).find('img').animate({width:325, marginTop:0, marginLeft:0},300);
+	   });
+	
+        });
+    </script>
+    <style type="text/css">.tb960x90,.tb300x250{display:none!important;display:none}</style>
+    <script src="http://static.codepen.io/assets/common/stopExecutionOnTimeout-b2a7b3fe212eaa732349046d8416e00a9dec26eb7fd347590fbced3ab38af52e.js"></script>
+    <script src="https://cdn.bootcss.com/jquery/3.1.0/jquery.min.js"></script>
+    <script>$(function(){
+	$(window).on('scroll', function(){
+		if($(window).scrollTop() > 20){
+			$('.header').removeClass('large').addClass('small');
+		} else {
+			$('.header').removeClass('small').addClass('large');
+		}
+	});
+});
+//# sourceURL=pen.js
+</script>
 </head>
+<body class="menu">
+<div class="header large">
+    <center>
+	<div class="inner">
+        <h0><a href="../index.html"><img src="../images/LOGO.png" alt="logo"></a></h0> 
+		<ul class="nav">
+			<li><a href="../index.html" title="首页">Home</a></li>
+			<li><a href="../presentation.html" title="展示">Presentation</a></li>
+			<li><a href="../about_me.html" title="关于我">About Me</a></li>
+		</ul>
+	</div>
+    </center>
+</div>
 <!--632374027 -->
-
-<body class="en-us dark">
-    <nav class="navbar">
-        <div class="nav-content">
-            <a class="navItem" href="./">
-                <strong>AAPL</strong> Beijing Council</a>
-            <!--            <a class="navItem_menu" href="./about_us.html">About Us</a>-->
-            <a class="navItem_menu" href="./articles.html">Articles</a>
-        </div>
-    </nav>
     <main class="main">
+        <div class="navbar_space"></div>
         <section class="section section-hello text-center">
+            <div class="navbar_space" style="height:7%;"></div>
             <h1 class="introduction">
                 SUPER-VILLAIN-BOWL!
             </h1>
