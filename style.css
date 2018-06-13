@@ -567,13 +567,13 @@ footer ol {
     padding: 18px;
     border-radius: inherit;
 /*    background-color: hsla(0,0%,96%,.88);*/
-    background: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0.6);
 }
 /* 若浏览器支持 backdrop-filter，则不透明度为 60%，并启用高斯模糊 */
 
 @supports ( -webkit-backdrop-filter: none) or ( backdrop-filter: none) {
     .articleCard-content {
-        background: rgba(0, 0, 0, 0.7);
+        background-color: rgba(0, 0, 0, 0.7);
         -webkit-backdrop-filter: saturate(180%) blur(20px);
                 backdrop-filter: saturate(180%) blur(20px);
     }
@@ -682,4 +682,47 @@ p1 {
     margin: 24px 0;
     font-size: 30px;
 }
+}
+
+.violator {
+    font-size: 17px;
+    line-height: 1.47059;
+    font-weight: 400;
+    letter-spacing: -.022em;
+    font-family: "SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+    font-family: "SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+    color: #e85d00;
+    background: transparent;
+    border: 1px solid #e85d00;
+    border-radius: 4px;
+    display: inline-block;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    white-space: nowrap;
+}
+
+.violator2 {
+    display: inline-block;
+    padding: 1px 6px;
+/*    margin-left: 8px;*/
+/*    margin-right: 8px;*/
+    font-size: 12px;
+/*    color: #8590a6;*/
+/*    color:#e85d00;*/
+    color:white;
+/*    vertical-align: 1px;*/
+    vertical-align:middle;
+/*    background-color: #f6f6f6;*/
+    background-color: rgba(232, 93,0, 0.5);
+    border-radius: 3px;
+/*    align-self: center;*/
+}
+@supports ( -webkit-backdrop-filter: none) or ( backdrop-filter: none) {
+    .violator2 {
+        background-color:rgba(232, 93,0, 0.5);
+        -webkit-backdrop-filter: saturate(180%) blur(20px);
+                backdrop-filter: saturate(180%) blur(20px);
+    }
 }
