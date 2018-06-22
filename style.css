@@ -455,6 +455,38 @@ footer ol {
     filter: blur(10px);
 }
 
+.AnswerItem-statusContent {
+    padding: 16px;
+    margin: 16px 0;
+    background: #f6f6f6;
+    border-radius: 4px;
+    text-align: left;
+}
+
+.AnswerItem-statusReason {
+    font-size: 15px;
+    line-height: 26px;
+    color: #1a1a1a;
+    font-weight: 600;
+    font-synthesis: style;
+    margin-bottom: 3px;
+    display: block;
+}
+
+.AnswerItem-complaintHelp {
+    float: right;
+}
+
+.AnswerItem-complaintIcon {
+    position: relative;
+    top: -1px;
+}
+
+.Icon {
+    vertical-align: text-bottom;
+    fill: currentColor;
+}
+
 /* 若浏览器支持 backdrop-filter，则透明度为 50%，并启用毛玻璃*/
 
 /*@supports (-webkit-backdrop-filter: blur(10px)) or (backdrop-filter: blur(10px)) {*/
